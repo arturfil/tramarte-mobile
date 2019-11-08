@@ -1,8 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
-const ProductListScreen = () => {
-  return <Text style={{fontSize: 48}}>ProductListScreen</Text>
+const ProductListScreen = ({navigation}) => {
+  return ( <>
+    <Text style={{fontSize: 48}}>ProductListScreen</Text>
+    <Button title="Go to Product Detail" onPress={() => navigation.navigate('ProductDetail')}/>
+  </>
+  )
 }
 
 const styles = StyleSheet.create({
